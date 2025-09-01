@@ -3,6 +3,7 @@ package org.enzoribas.EdgeDetector;
 
 import org.bytedeco.javacpp.Loader;
 import org.bytedeco.opencv.opencv_core.Mat;
+import org.enzoribas.Config;
 
 import static org.bytedeco.opencv.global.opencv_imgcodecs.*;
 import static org.bytedeco.opencv.global.opencv_imgproc.Canny;
@@ -13,16 +14,18 @@ public class CannyEdgeDetector {
     }
 
     public static void main(String[] args) {
-        Mat src = imread(Config.INPUT_IMAGE, IMREAD_GRAYSCALE);
+        String projectPath = Config.PROJECT_PATH + "EdgeDetector/images/";
+        String inputImagePath = projectPath + "input.jpg";
+        Mat src = imread(inputImagePath, IMREAD_GRAYSCALE);
         if (src.empty()) {
             System.out.println("Could not load image!");
             return;
         }
 
         Mat edges = new Mat();
-        Canny(src, edges, 50, 70);
+        Canny(src, edges, 50, 170);
 
-        String outputDir = Config.OUTPUT_IMAGE + "/canny/";
+        String outputDir = Config.PROJECT_PATH + "EdgeDetector/images/output/canny/";;
         String fileName = "edges.png";
 
         imwrite(outputDir+fileName, edges);
