@@ -30,7 +30,7 @@ public class HaarCascade {
                 src,                                 // imagem de entrada
                 faces,                               // onde armazenar os retângulos detectados
                 1.1,                                 // scaleFactor: quanto reduzir a imagem a cada escala (1,1 = 10% menor)
-                3,                                  // minNeighbors: quantos vizinhos são necessários para confirmar um rosto
+                1,                                  // minNeighbors: quantos vizinhos são necessários para confirmar um rosto
                 0,                                  // flags: geralmente 0
                 new Size(150, 150),     // minSize: tamanho mínimo do rosto
                 new Size()                          // maxSize: tamanho máximo (ou vazio)
