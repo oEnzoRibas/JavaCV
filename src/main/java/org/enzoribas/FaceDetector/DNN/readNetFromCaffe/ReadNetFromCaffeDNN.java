@@ -1,4 +1,4 @@
-package org.enzoribas.DNN.readNetFromCaffe;
+package org.enzoribas.FaceDetector.DNN.readNetFromCaffe;
 
 import org.bytedeco.javacpp.FloatPointer;
 import org.bytedeco.javacpp.indexer.FloatIndexer;
@@ -16,7 +16,7 @@ import javax.swing.*;
 
 public class ReadNetFromCaffeDNN {
     public static void main(String[] args) {
-        String projectPath = Config.PROJECT_PATH + "DNN/readNetFromCaffe/";
+        String projectPath = Config.PROJECT_PATH + "FaceDetector/DNN/readNetFromCaffe/";
         String imagePath = projectPath + "images/input.jpg";
         String protoPath = projectPath + "resources/deploy.prototxt";
         String modelPath = projectPath + "resources/res10_300x300_ssd_iter_140000.caffemodel";
