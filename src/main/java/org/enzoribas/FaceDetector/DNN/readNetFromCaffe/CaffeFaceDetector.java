@@ -14,7 +14,7 @@ import org.opencv.core.CvType;
 
 import javax.swing.*;
 
-public class ReadNetFromCaffeDNN {
+public class CaffeFaceDetector {
     public static void main(String[] args) {
         String projectPath = Config.PROJECT_PATH + "FaceDetector/DNN/readNetFromCaffe/";
         String imagePath = projectPath + "images/input.jpg";

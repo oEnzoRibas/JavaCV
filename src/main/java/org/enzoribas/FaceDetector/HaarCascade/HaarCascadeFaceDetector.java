@@ -1,6 +1,5 @@
 package org.enzoribas.FaceDetector.HaarCascade;
 
-import org.bytedeco.javacpp.Loader;
 import org.bytedeco.opencv.opencv_core.*;
 import org.bytedeco.opencv.opencv_objdetect.CascadeClassifier;
 import org.enzoribas.Config;
@@ -9,7 +8,7 @@ import static org.bytedeco.opencv.global.opencv_imgcodecs.*;
 import static org.bytedeco.opencv.global.opencv_imgproc.LINE_8;
 import static org.bytedeco.opencv.global.opencv_imgproc.rectangle;
 
-public class HaarCascade {
+public class HaarCascadeFaceDetector {
 
     public static void main(String[] args) {
 

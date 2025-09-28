@@ -11,7 +11,7 @@ import static org.bytedeco.opencv.global.opencv_dnn.*;
 import static org.bytedeco.opencv.global.opencv_imgproc.*;
 import static org.bytedeco.opencv.global.opencv_highgui.*; // para imshow e waitKey
 
-public class ReadNetFromCaffeDNN_WebCam {
+public class CaffeFaceDetectorWebcam {
     public static void main(String[] args) {
         String projectPath = Config.PROJECT_PATH + "FaceDetector/DNN/readNetFromCaffe/";
         String imagePath = projectPath + "images/input.jpg";
